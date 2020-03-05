@@ -3,7 +3,7 @@
 <ul>
   <ul *ngFor="let todo of todoList">
     <li>{{ todo }}</li>
-    <button>Complete</button>
+    <button (click)="showGoodJob()">Complete</button>
   </ul>
 </ul>
-<div>showGoodJob</div>
+<div *ngIf="goodJob">Good Job!</div>

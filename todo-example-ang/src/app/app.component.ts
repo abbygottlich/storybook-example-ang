@@ -12,9 +12,16 @@ export class AppComponent {
 
   todoList = [];
 
+  goodJob = false;
+
   onAdd = () => {
     this.todoList.push(this.todo);
-    console.log("added", this.todoList);
+    this.todo = "";
+  };
+
+  showGoodJob = () => {
+    this.goodJob = true;
+    this.todoList = [];
   };
 }
 
