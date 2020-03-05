@@ -24,5 +24,3 @@ export class AppComponent {
     this.todoList = [];
   };
 }
-
-let list = [];
