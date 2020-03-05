@@ -1,9 +1,9 @@
-<input id="todo" placeholder="To do..." />
+<input placeholder="To do..." [(ngModel)]="todo" />
 <button (click)="onAdd()">Add</button>
 <ul>
-  <div>
-    <li>item</li>
+  <ul *ngFor="let todo of todoList">
+    <li>{{ todo }}</li>
     <button>Complete</button>
-  </div>
+  </ul>
 </ul>
 <div>showGoodJob</div>

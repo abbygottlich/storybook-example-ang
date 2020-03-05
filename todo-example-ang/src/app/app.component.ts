@@ -8,13 +8,13 @@ import { Component } from "@angular/core";
 export class AppComponent {
   title = "todo-example-ang";
 
+  todo = "";
+
+  todoList = [];
+
   onAdd = () => {
-    // this.list.push(document.getElementById("todo").value);
-    // this.setState({
-    //   todos: this.list
-    // });
-    // document.getElementById("todo").value = null;
-    console.log("added!");
+    this.todoList.push(this.todo);
+    console.log("added", this.todoList);
   };
 }
 
