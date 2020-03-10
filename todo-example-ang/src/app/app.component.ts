@@ -6,21 +6,22 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "todo-example-ang";
+  todo: string;
+  todoList: any;
+  goodJob: boolean;
 
-  todo = "";
-
-  todoList = [];
-
-  goodJob = false;
+  constructor() {
+    this.todo = "";
+    this.todoList = [];
+  }
 
   onAdd = () => {
     this.todoList.push(this.todo);
     this.todo = "";
   };
 
-  showGoodJob = () => {
+  completeTodo = index => {
+    this.todoList.splice(index, 1);
     this.goodJob = true;
-    this.todoList = [];
   };
 }
