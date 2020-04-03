@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   todo: string;
   todoList: any;
-  goodJob: boolean;
+  completed: boolean;
 
   constructor() {
     this.todo = "";
@@ -22,6 +22,6 @@ export class AppComponent {
 
   completeTodo = index => {
     this.todoList.splice(index, 1);
-    this.goodJob = true;
+    this.completed = true;
   };
 }

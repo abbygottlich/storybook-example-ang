@@ -3,10 +3,10 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { GoodJobComponent } from "./components/good-job/good-job.component";
+import { CompletedComponent } from "./components/completed/completed.component";
 
 @NgModule({
-  declarations: [AppComponent, GoodJobComponent],
+  declarations: [AppComponent, CompletedComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
